@@ -1,5 +1,5 @@
-import Category from "../models/Category.js";
-import { Request, Response } from "express";
+import Category from "../models/Category.ts";
+import type { Request, Response } from "express";
 
 export const listCategories = async (req: Request, res: Response) => {
   try {

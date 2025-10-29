@@ -1,6 +1,6 @@
 import jwt from "jsonwebtoken";
-import User from "../models/User.js";
-import { Request, Response } from "express";
+import User from "../models/User.ts";
+import type { Request, Response } from "express";
 
 const signToken = (user: any) => {
   return jwt.sign({ id: user._id, email: user.email, username: user.username }, process.env.JWT_SECRET!, {

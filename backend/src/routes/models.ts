@@ -1,7 +1,7 @@
 import express from "express";
-import { createModel, getModels, getModelById, downloadModel } from "../controllers/modelController.js";
-import { auth } from "../middleware/auth.js";
-import { uploadFields } from "../utils/upload.js";
+import { createModel, getModels, getModelById, downloadModel } from "../controllers/modelController.ts";
+import { auth } from "../middleware/auth.ts";
+import { uploadFields } from "../utils/upload.ts";
 
 const router = express.Router();
 

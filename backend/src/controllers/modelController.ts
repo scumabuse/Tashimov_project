@@ -1,7 +1,7 @@
-import { Request, Response } from "express";
-import Model3D from "../models/Model3D.js";
-import Like from "../models/Like.js";
-import User from "../models/User.js";
+import type { Request, Response } from "express";
+import Model3D from "../models/Model3D.ts";
+import Like from "../models/Like.ts";
+import User from "../models/User.ts";
 import fs from "fs";
 import path from "path";
 

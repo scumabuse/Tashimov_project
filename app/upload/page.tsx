@@ -34,9 +34,7 @@ export default function UploadPage() {
     previewImages.forEach((img) => formData.append("previews", img))
 
     try {
-      const res = await api.post("/models", formData, {
-        headers: { "Content-Type": "multipart/form-data" },
-      })
+      const res = await api.post("/models", formData)
 
       alert("Модель успешно загружена!")
       window.location.href = `/models/${res.data.model._id}`
