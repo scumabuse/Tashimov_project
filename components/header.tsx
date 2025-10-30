@@ -37,7 +37,7 @@ export function Header({ searchQuery, onSearchChange }: HeaderProps) {
             <div className="flex h-10 w-10 items-center justify-center rounded-lg bg-primary">
               <Grid3x3 className="h-6 w-6 text-primary-foreground" />
             </div>
-            <span className="text-xl font-bold">3D Models Atym</span>
+            <span className="text-xl font-bold">LYUTIY SAIT 3d MODELEI 228</span>
           </Link>
 
           {/* Search Bar */}

@@ -15,7 +15,7 @@ async function run() {
   await mongoose.connect(process.env.MONGO_URI!);
   for (const c of categories) {
     await Category.updateOne({ slug: c.slug }, { $set: c }, { upsert: true });
-  }
+  } 
   console.log("Seed done");
   process.exit(0);
 }
